@@ -1,5 +1,3 @@
-
-
 class Student:
 
     def __init__(self,name,age,student_id,gpa):
