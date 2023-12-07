@@ -10,6 +10,9 @@ class Sports:
     def sports_name(self,value):
         self._name=value
 
+    def practice(self):
+        print("Doing Sports practice")
+
 class LandSports(Sports):
     def __init__(self,name,field):
         super().__init__(name)
@@ -20,24 +23,28 @@ class LandSports(Sports):
         return self._field
 
 class WaterSports(Sports):
-    def __int__(self,activity):                
-        self._activities=activity
+    def __int__(self,name,activity):
+        super().__init__(name)                
+        self._activity=activity
 
     @property 
-    def watersports_field(self):
+    def watersports_activity(self):
         return self._activity
 
 if __name__=="__main__":
     baseball=LandSports("baseball","baseball field")
     print(baseball.sports_name)
     print(baseball.landsports_field)
+    print(baseball.practice())
 
     water_skiing=WaterSports("Water Skiing", "Strap on your skis and fly across the water")
     print(water_skiing.sports_name)
-    print(water_skiing.watersports_activity) 
+    print(water_skiing.watersports_activity)
+    print(water_skiing.practice())
 
-
-
+    sports=Sports("Softball")
+    print(sports.sports_name)
+    print(sports.practice)
 
 
 
