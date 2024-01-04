@@ -18,12 +18,12 @@ class FriedChicken:
     def increase_crispiness(self, amount):
         # 增加炸雞的脆度屬性
         self.crispy_level += amount
-        print(f"Crispy level increased by {amount}.")
+        print(f"Crispy level increased by {amount}")
 
     def change_flavor(self, new_flavor):
         # 更改炸雞的風味屬性
         self.flavor = new_flavor
-        print(f"Flavor changed to {new_flavor}.")
+        print(f"Flavor changed to {new_flavor}")
 
     def calculate_discounted_price(self, discount_percent):
         # 計算折扣後的價格
@@ -31,10 +31,10 @@ class FriedChicken:
         print(f"Discounted Price: {discounted_price}")
 
 # 建立四個炸雞物件
-chicken1 = FriedChicken("Original", "Spicy", 5, "Large", 50)
-chicken2 = FriedChicken("BBQ", "Sweet", 3, "Medium", 40)
-chicken3 = FriedChicken("Honey Mustard", "Mild", 4, "Small", 30)
-chicken4 = FriedChicken("Teriyaki", "Savory", 2, "Extra Large", 60)
+chicken1 = FriedChicken("Original", "Spicy", 5, "Large", 70)
+chicken2 = FriedChicken("BBQ", "Sweet", 3, "Medium", 60)
+chicken3 = FriedChicken("Honey Mustard", "Mild", 4, "Small", 50)
+chicken4 = FriedChicken("Teriyaki", "Savory", 2, "Extra Large", 80)
 
 # 分別呼叫三個副函式
 chicken1.display_info()
